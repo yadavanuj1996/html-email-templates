@@ -1,0 +1,650 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+    <title>E-Mail HTML Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <style>
+        /*Calling our web font*/
+
+        /* Some resets and issue fixes */
+        #outlook a {
+            padding: 0;
+        }
+
+        body {
+            width: 100% !important;
+            size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*-webkit-text; */
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .backgroundTable {
+            margin: 0 auto;
+            padding: 0;
+            width: 100% !important;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        .ExternalClass * {
+            line-height: 115%;
+        }
+
+        /* End reset */
+
+
+        /* These are our tablet/medium screen media queries */
+        @media screen and (max-width: 630px) {
+
+
+            /* Display block allows us to stack elements */
+            *[class="mobile-column"] {
+                display: block;
+            }
+
+            /* Some more stacking elements */
+            *[class="mob-column"] {
+                float: none !important;
+                width: 100% !important;
+            }
+
+            /* Hide stuff */
+            *[class="hide"] {
+                display: none !important;
+            }
+
+            /* This sets elements to 100% width and fixes the height issues too, a god send */
+            *[class="100p"] {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            /* For the 2x2 stack */
+            *[class="condensed"] {
+                padding-bottom: 10px !important; /*changed from original 40px*/
+                display: block;
+            }
+
+            /* Centers content on mobile */
+            *[class="center"] {
+                text-align: center !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            /* 100percent width section with 20px padding */
+            *[class="100pad"] {
+                width: 100% !important;
+                padding: 20px;
+            }
+
+            /* 100percent width section with 20px padding left & right */
+            *[class="100padleftright"] {
+                width: 100% !important;
+                padding: 0 20px 0 20px;
+            }
+
+            /* 100percent width section with 20px padding top & bottom */
+            *[class="100padtopbottom"] {
+                width: 100% !important;
+                padding: 20px 0px 20px 0px;
+            }
+
+
+        }
+
+        .white-background {
+            background-color: white !important;
+        }
+
+        /*LOGO*/
+        .logo h1 {
+            margin: 0;
+        }
+
+        .logo h1 a {
+            color: #000000;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Navigation */
+        .navigation {
+            padding: 0;
+        }
+
+        .navigation li {
+            list-style: none;
+            display: inline-block;
+            ;
+            margin-left: 5px;
+            color: rgba(0, 0, 0, 0.4);
+            font-weight: 500;
+            font-size: 13px;
+        }
+
+        .navigation li a {
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            font-weight: 400;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif, 'Roboto', Arial;
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        .heading-image-sub-text {
+            font-size: 15px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, .8);
+            text-shadow: 0px 0px 5px #000;
+        }
+
+        .heading-section-topic {
+            color: #ffffff;
+            font-size: 20px;
+            margin-top: 0;
+            line-height: 1.4;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-shadow: 0px 0px 3px #000;
+            font-family: Roboto;
+
+        }
+
+        .heading {
+            color: #000000;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .num {
+            color: #ffffff;
+            font-size: 35px;
+            margin-top: 0;
+            line-height: 1.4;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-shadow: 0px 0px 3px #000;
+            font-family: Roboto;
+        }
+
+        .name {
+            color: #ffffff;
+            font-size: 18px;
+            margin-top: 0;
+            line-height: 1.4;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-shadow: 0px 0px 5px #000;
+            font-family: Roboto;
+        }
+        .no-bottom-top-padding{
+            padding-top:0px !important;
+            padding-bottom:0px !important;
+        }
+        
+    </style>
+</head>
+
+<body style="padding:0; margin:0">
+
+    <table border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0" width="100%">
+        <tr>
+            <td align="center" valign="top">
+                <table width="640" cellspacing="0" cellpadding="0" bgcolor="#" class="100p">
+                    <tr>
+                        <td valign="top" class="white-background" style="padding: 1em 2.5em;">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td width="40%" class="logo" style="text-align: left;">
+                                        <h1><a href="#">Corporate</a></h1>
+                                    </td>
+                                    <td width="60%" class="logo" style="text-align: right;">
+                                        <ul class="navigation">
+                                            <li><a href="#services">Services</a></li>
+                                            <li><a href="#projects">Projects</a></li>
+                                            <li><a href="#contact">Contact</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table width="640" cellspacing="0" cellpadding="0" bgcolor="#" class="100p">
+                    <tr>
+                        <td background="https://img.vidible.tv/prod/2018-04/11/5acd6d29c673db731205cf2e/5acd6d91841fad60ab6ff960_853x480_U_v1.jpg"
+                            bgcolor="#3b464e" width="640" height="400px" valign="middle" class="100p">
+                            <!--[if gte mso 9]>
+                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;">
+                                    <v:fill type="tile" src="images/header-bg.jpg" color="#3b464e" />
+                                    <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                                        <![endif]-->
+                            <div>
+                                <table width="640" border="0" cellspacing="0" cellpadding="20" class="100p">
+                                    <tr>
+                                        <td valign="top">
+
+                                            <table border="0" cellspacing="0" cellpadding="0" width="600" class="100p">
+                                                <tr>
+                                                    <td height="35"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" style="color:#FFFFFF; font-size:24px;">
+                                                        <font face="'Poppins','Roboto', sans-serif, Arial">
+                                                            <h2 class="heading-section-topic">We Help Businesses Grow
+                                                            </h2>
+                                                            <p class="heading-image-sub-text">
+                                                                Our team works seamlessly with businesses around the world from startups to 
+                                                                corporates and help them grow using technology
+                                                                and data.
+                                                            </p>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="35"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if gte mso 9]>
+                                    </v:textbox>
+                                </v:rect>
+                                <![endif]-->
+                        </td>
+                    </tr>
+                </table>
+
+
+
+                <table id="services" width="640" border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff" class="100p">
+                    <tr>
+                        <td align="center" class="heading">
+                            <font face="'Poppins', sans-serif,'Roboto',Arial">Our Services</font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding-top:0px;">
+                            <font face="'Poppins', sans-serif,'Roboto',Arial">Our team of creatives, developers and analysts have worked with businesses and helped them in solving their problems.</font>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+
+
+                <table width="640" border="0" cellspacing="0" cellpadding="20" class="100p" bgcolor="#FFFFFF">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" class="100padtopbottom" width="600">
+                                <tr>
+                                    <td align="left" class="condensed" valign="top">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            class="mob-column" width="290">
+                                            <tr>
+                                                <td valign="top" align="center">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td valign="top" align="center" class="100padleftright">
+                                                                <table border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td width="135" height="135" align="center"><a
+                                                                                href="#"><img
+                                                                                    src="https://image.freepik.com/free-vector/programm-development-flat-illustration_1284-13767.jpg"
+                                                                                    border="0"
+                                                                                    style="display:block;width:100%;height:100%;" /></a>
+                                                                        </td>
+                                                                        <td width="20"></td>
+                                                                        <td width="135" height="135" align="center"><a
+                                                                                href="#"><img
+                                                                                    src="https://image.freepik.com/free-vector/app-development-concept-with-flat-design_23-2147849842.jpg"
+                                                                                    border="0"
+                                                                                    style="display:block;width:100%;height:100%;" /></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" class="100padleftright" align="center">
+                                                                <table border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td valign="top" width="135" align="center"
+                                                                            style="font-size:15px; color:#2a8e9d;">
+                                                                            <font
+                                                                                face="'Poppins','Roboto', sans-serif, Arial">
+                                                                                Website Development</font>
+                                                                        </td>
+                                                                        <td width="20"></td>
+                                                                        <td valign="top" width="135" align="center"
+                                                                            style="font-size:15px; color:#2a8e9d;">
+                                                                            <font
+                                                                                face="'Poppins','Roboto', sans-serif, Arial">
+                                                                                Mobile App Development</font>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="20" class="hide"></td>
+                                    <td align="left" class="condensed" valign="top">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            class="mob-column" width="290">
+                                            <tr>
+                                                <td valign="top" align="center">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td valign="top" align="center" class="100padleftright">
+                                                                <table border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td width="135" height="135" align="center"><a
+                                                                                href="#"><img
+                                                                                    src="https://image.freepik.com/free-vector/digital-marketing-icons-collection_23-2147501682.jpg"
+                                                                                    border="0"
+                                                                                    style="display:block;width:100%;height:100%;" /></a>
+                                                                        </td>
+                                                                        <td width="20"></td>
+                                                                        <td width="135" height="135" align="center"><a
+                                                                                href="#"><img
+                                                                                    src="https://image.freepik.com/free-photo/desktop-table-office_53876-42947.jpg"
+                                                                                    border="0"
+                                                                                    style="display:block;width:100%;height:100%;" /></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" class="100padleftright" align="center">
+                                                                <table border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td valign="top" width="135" align="center"
+                                                                            style="font-size:15px; color:#2a8e9d;">
+                                                                            <font
+                                                                                face="'Poppins','Roboto', sans-serif, Arial">
+                                                                                Digital & Social Media Marketing</font>
+                                                                        </td>
+                                                                        <td width="20"></td>
+                                                                        <td valign="top" width="135" align="center"
+                                                                            style="font-size:15px; color:#2a8e9d;">
+                                                                            <font
+                                                                                face="'Poppins','Roboto', sans-serif, Arial">
+                                                                                Branding & Advertising</font>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table width="640" border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff" class="100p">
+                    <tr>
+                        <td align="center" class="heading">
+                            <font face="'Poppins', sans-serif,'Roboto',Arial" id="projects">Our Projects </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding-top:0px;">
+                            <font face="'Poppins', sans-serif,'Roboto',Arial">We help customers in solving their business problems with our unique solutions, approach and timely execution.</font>
+                        </td>
+                    </tr>
+                </table>
+
+                <table width="640" cellspacing="0" cellpadding="0" bgcolor="#" class="100p">
+                    <tr>
+                        <td background="https://image.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg"
+                            bgcolor="#3b464e" width="100%" height="300" valign="middle" class="100p">
+                            <div>
+                                <table width="640" border="0" cellspacing="0" cellpadding="20" class="100p">
+                                    <tr>
+                                        <td valign="top">
+
+                                            <table border="0" cellspacing="0" cellpadding="0" width="600" class="100p">
+                                                <tr>
+                                                    <td height="35"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="33.33%" align="center" style="color:#FFFFFF; font-size:24px;">
+                                                        <font face="'Poppins','Roboto', sans-serif, Arial">
+                                                            <span class="num">20</span></br>
+                                                            <span class="name">Clients</span>
+                                                        </font>
+                                                    </td>
+                                                    <td width="33.33%" align="center" style="color:#FFFFFF; font-size:24px;">
+                                                        <font face="'Poppins','Roboto', sans-serif, Arial">
+                                                            <span class="num">50</span></br>
+                                                            <span class="name">Projects</span>
+                                                        </font>
+                                                    </td>
+                                                    <td width="33.33%" align="center" style="color:#FFFFFF; font-size:24px;">
+                                                        <font face="'Poppins','Roboto', sans-serif, Arial">
+                                                            <span class="num">100</span></br>
+                                                            <span class="name">Cofee Cups</span>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="35"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table width="640" border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff" class="100p">
+                    <tr>
+                        <td align="center" style="font-size:16px; color:#848484;">
+                            <font face="'Poppins','Roboto', sans-serif, Arial">
+                                <span style="color:#2a8e9d; font-size:15px;">
+                                    Give us a chance to amaze you
+                                </span><br />
+                                <br />
+                                <span style="font-size:15px;color: rgba(0,0,0,0.4)">
+                                    We provide services to match the needs of our customers across all the business domains. We provide quality, reliable and cost-effective solutions to your business needs. We help our customers achieve long-term success by providing cutting edge technology, relevant strategy, and innovative solutions. Our team of motivated developers, analysts and creatives believe in constantly exploring and innovating new frontiers so that we can deliver the best support to our clients.
+                                </span></font>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table id="contact" width="640" border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff" class="100p">
+                    <tr>
+                        <td align="center" class="heading">
+                            <font face="'Poppins', sans-serif,'Roboto',Arial">Reach Us </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding-top:0px;">
+                            <font face="'Poppins', sans-serif,'Roboto',Arial">
+                                Feel free to approach us with any problem or pain point that you are facing in business, we are here to help you all the time.
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding-top:0px;padding-bottom: 0px;">
+                            <a href="https://www.google.com">
+                                <font style="color:#2a8e9d;" face="'Poppins', sans-serif,'Roboto',Arial">
+                                    www.yourdoaminname.com</font>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <table width="640" border="0" cellspacing="0" cellpadding="20" class="100p" bgcolor="#FFFFFF">
+                    <tr>
+                        <td class="no-bottom-top-padding" align="center" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" class="100padtopbottom" width="600">
+                                <tr>
+                                    <td align="left" class="condensed" valign="top">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            class="mob-column" width="290">
+                                            <tr>
+                                                <td valign="top" align="center">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td valign="top" align="center" class="100padleftright">
+                                                                <table border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td width="135" height="135" align="center">
+                                                                            <span style="color:#2a8e9d;">
+                                                                                Drop us a call
+                                                                            </span></br>
+                                                                            <span
+                                                                                style="color:#2a8e9d;">+91-789456XX82</span></br>
+                                                                            <span
+                                                                                style="color:#2a8e9d;">+91-997356XX03</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="10"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="left" class="condensed" valign="top">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            class="mob-column" width="290">
+                                            <tr>
+                                                <td valign="top" align="center">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td valign="top" align="center" class="100padleftright">
+                                                                <table border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td width="135" height="135" align="center">
+                                                                            <span style="color:#2a8e9d;">Send us a
+                                                                                Mail</span></br>
+                                                                            <span
+                                                                                style="color:#2a8e9d;">testuser@gmail.com</span></br>
+                                                                            <span
+                                                                                style="color:#2a8e9d;">loremipsum@domainname.com</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="10"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="hide" width="640" border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff" class="100p condensed">
+                    <tr>
+                        <td class="sm-links" width="25%" align="right" style="font-size:16px; color:#848484;">
+                            <font face="'Poppins','Roboto', sans-serif, Arial">
+                                <span>
+                                    <a style="color:#2a8e9d; font-size:15px;" href="https://www.google.com"
+                                        target="_blank">Website</a>
+                                </span>
+                            </font>
+                        </td>
+                        <td class="sm-links" width="25%" align="center" style="font-size:16px; color:#848484;">
+                            <font face="'Poppins','Roboto', sans-serif, Arial">
+                                <span>
+                                    <a style="color:#2a8e9d; font-size:15px;" href="https://www.linkedin.com"
+                                        target="_blank">LinkedIn</a>
+                                </span>
+                            </font>
+                        </td>
+                        <td class="sm-links" width="25%" align="center" style="font-size:16px; color:#848484;">
+                            <font face="'Poppins','Roboto', sans-serif, Arial">
+                                <span>
+                                    <a style="color:#2a8e9d; font-size:15px;" href="https://www.instagram.com"
+                                        target="_blank">Instagram</a>
+                                </span>
+                            </font>
+                        </td>
+                        <td class="sm-links" width="25%" align="left" style="font-size:16px; color:#848484;">
+                            <font face="'Poppins','Roboto', sans-serif, Arial">
+                                <span>
+                                    <a style="color:#2a8e9d; font-size:15px;" href="https://www.facebook.com"
+                                        target="_blank">Facebook</a>
+                                </span>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
