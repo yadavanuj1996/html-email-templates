@@ -1,4 +1,4 @@
-# html-email-templates
+# Html-Email-Templates
 You probably know how powerful email marketing can be when it comes to business growth hence we are providing you html email templates that are visually aesthetic, easy to implement and free to use.
 
 ## Inline your CSS before sending
